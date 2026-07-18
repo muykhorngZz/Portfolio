@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Hang Muykhorng — Data Science Student, AI Researcher & Builder</title>
+<meta name="description" content="Personal website of Hang Muykhorng — Year 5 Data Science student at the Institute of Technology of Cambodia, AI researcher and student entrepreneur." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..600&family=Inter:wght@300..700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header" id="siteHeader">
+  <div class="wrap header-inner">
+    <nav class="nav" id="nav">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#awards">Awards</a>
+      <a href="#volunteering">Volunteering</a>
+      <div class="contact-menu">
+        <button type="button" class="nav-cta" id="contactBtn"
+                aria-haspopup="true" aria-expanded="false" aria-controls="contactMenu">
+          Contact <span class="caret" aria-hidden="true">▾</span>
+        </button>
+        <div class="contact-dropdown" id="contactMenu" role="menu"
+             aria-labelledby="contactBtn" hidden></div>
+      </div>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ============ HOME ============ -->
+  <section id="home" class="hero">
+    <div class="hero-bg" aria-hidden="true">
+      <span class="blob b1"></span><span class="blob b2"></span><span class="blob b3"></span>
+    </div>
+    <div class="wrap hero-inner">
+      <div class="hero-text reveal">
+        <h1>
+        <br /> I'm <span class="accent">Hang Muykhorng</span> <br />
+          I build AI that serves<br class="br-lg" /> real people.
+        </h1>
+        <p class="lede">
+          Incoming Year 5 Data Science student at the Institute of Technology of Cambodia,
+          majoring in Applied Mathematics &amp; Statistics. I spend my time between research
+          papers, competition stages, and half-finished side projects — learning by building
+          things that matter to my community.
+        </p>
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="#projects">See my work</a>
+          <a class="btn btn-ghost" href="#about">More about me</a>
+        </div>
+        <ul class="hero-facts">
+          <li><strong>#1</strong><span>Year 4 rank · GPA 4.00</span></li>
+          <li><strong>AI</strong><span>Researcher &amp; builder</span></li>
+          <li><strong>CFO</strong><span>Co-founder, RielAds</span></li>
+        </ul>
+      </div>
+      <div class="hero-portrait reveal">
+        <figure class="portrait">
+          <img src="assets/images/portrait.jpg" alt="Portrait of Hang Muykhorng"
+               onerror="this.closest('figure').classList.add('is-placeholder')" />
+          <figcaption>Add your photo at <code>assets/images/portrait.jpg</code></figcaption>
+        </figure>
+      </div>
+    </div>
+    <div class="wrap">
+      <div class="marquee reveal" aria-label="Interests">
+        <div class="marquee-track" id="interestTrack"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section id="about" class="section section-tint">
+    <div class="wrap">
+      <header class="section-head reveal">
+        <p class="eyebrow">About</p>
+        <h2>A student who never stopped being curious.</h2>
+      </header>
+      <div class="about-grid">
+        <div class="about-story reveal" id="aboutStory"></div>
+        <div class="about-media reveal" id="aboutMedia"></div>
+      </div>
+      <div class="timeline reveal" id="timeline"></div>
+    </div>
+  </section>
+
+  <!-- ============ PROJECTS ============ -->
+  <section id="projects" class="section">
+    <div class="wrap">
+      <header class="section-head reveal">
+        <p class="eyebrow">Projects</p>
+        <h2>Things I've built, broken, and rebuilt.</h2>
+        <p class="section-sub">From a startup I co-founded to coursework that got out of hand — grouped by how they came to life.</p>
+      </header>
+      <div class="filters reveal" id="projectFilters"></div>
+      <div class="project-groups" id="projectGroups"></div>
+    </div>
+  </section>
+
+  <!-- ============ AWARDS ============ -->
+  <section id="awards" class="section section-tint">
+    <div class="wrap">
+      <header class="section-head reveal">
+        <p class="eyebrow">Awards &amp; Recognition</p>
+        <h2>Moments I'm grateful for.</h2>
+        <p class="section-sub">Every one of these came with a team, a mentor, or a friend who believed in the idea first.</p>
+      </header>
+      <div class="award-groups" id="awardGroups"></div>
+    </div>
+  </section>
+
+  <!-- ============ VOLUNTEERING ============ -->
+  <section id="volunteering" class="section">
+    <div class="wrap">
+      <header class="section-head reveal">
+        <p class="eyebrow">Volunteering</p>
+        <h2>Where I show up when no one's counting.</h2>
+        <p class="section-sub">Translating, interpreting, hosting, carrying chairs — the work that taught me the most about people.</p>
+      </header>
+      <div class="vol-list" id="volList"></div>
+    </div>
+  </section>
+
+  <!-- ============ PHOTO STRIP ============ -->
+  <section class="strip" aria-label="Moments from the journey">
+    <div class="strip-track" id="photoStrip"></div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <p class="footer-quote">"Build the thing you wish existed for the people you grew up with."</p>
+    <div class="footer-links" id="footerLinks"></div>
+    <div class="footer-phones" id="footerPhones" hidden></div>
+    <p class="footer-fine">© <span id="year"></span> Hang Muykhorng · Phnom Penh, Cambodia</p>
+  </div>
+</footer>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo viewer" hidden>
+  <button class="lb-close" id="lbClose" aria-label="Close">&times;</button>
+  <button class="lb-nav lb-prev" id="lbPrev" aria-label="Previous">&#8249;</button>
+  <figure class="lb-figure">
+    <img id="lbImg" src="" alt="" />
+    <figcaption id="lbCap"></figcaption>
+  </figure>
+  <button class="lb-nav lb-next" id="lbNext" aria-label="Next">&#8250;</button>
+</div>
+
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
