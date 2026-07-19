@@ -285,7 +285,7 @@ const DATA = {
       id: "leadership",
       title: "Leadership",
       items: [
-        { name: "Leader — Data & Business Analytics Student Club", org: "Institute of Technology of Cambodia", year: "2025 – present", note: "Organising sessions, mentoring juniors, and keeping the club's projects moving.", photos: [], pdf: "assets/certificates/dba-club-lead.pdf" },
+        { name: "Team Lead — Data & Business Analytics Student Club", org: "Institute of Technology of Cambodia", year: "2025 – present", note: "Organising sessions, mentoring juniors, and keeping the club's projects moving.", photos: [], pdf: "assets/certificates/dba-club-lead.pdf" },
         { name: "Marketing & Sales Intern", org: "Spring Education Center", year: "2024", note: "My first look at how a business actually finds its customers.", photos: [], pdf: "assets/certificates/spring-education-intern-2024.pdf" },
         { name: "Team Leader — Student Sharing Knowledge Forum", org: "The Westline School", year: "2018", note: "Won the debate in a team leader role.", photos: [], pdf: "assets/certificates/westline-forum-2018.pdf" },
         { name: "MOVERS Workshop — Orientation to Entrepreneurship", org: "MOVERS", year: "2022", note: "Participant.", photos: [], pdf: "assets/certificates/movers-workshop-2022.pdf" }
