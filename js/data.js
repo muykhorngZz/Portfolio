@@ -117,8 +117,8 @@ const DATA = {
     { year: "2022", title: "Institute of Technology of Cambodia", text: "Began an engineering degree in Applied Mathematics & Statistics (Data Science) after ranking 1st at Santhormok High School." },
     { year: "2023", title: "Languages & foundations",             text: "IELTS 7.5 through GEP 12 at ACE, HSK 3 at Cambodia-China University, and my first UNESCO UNITWIN Data Science Camp." },
     { year: "2024", title: "Learning to build",                   text: "Programming coursework in C/C++/OOP at ETEC, plus web fundamentals." },
-    { year: "2025", title: "Competitions & a startup",            text: "CATALYST champion, YFS Phnom Penh winner, Honda YES top 15, CO-founding RielAds." },
-    { year: "2026", title: "Research on the international stage", text: "Champion at the NUS Young Fellowship Program in Singapore and Best Presentation at IEEE TIC 2026 in Malaysia. Ranked #1 in Year 4 with a 4.00 GPA." }
+    { year: "2025", title: "Competitions",            text: "CATALYST champion, YFS Phnom Penh winner, Honda YES top 15" },
+    { year: "2026", title: "Research on the international stage and Start Up", text: "Champion at the NUS Young Fellowship Program in Singapore and Best Presentation at IEEE TIC 2026 in Malaysia. Ranked #1 in Year 4 with a 4.00 GPA. CO-founding RielAds." }
   ],
 
   /* ============================================================
@@ -131,7 +131,7 @@ const DATA = {
       blurb: "The one I'm building for keeps.",
       projects: [
         {
-          name: "RielAds",
+          name: "RielAds (Under Development)",
           role: "Co-Founder & Chief Financial Officer",
           type: "Startup · Marketing Analytics",
           summary: "An AI-powered marketing analytics platform that helps Cambodian SMEs measure and optimise their advertising performance.",
