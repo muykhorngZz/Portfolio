@@ -118,12 +118,15 @@
   /* ---------- PROJECTS ---------- */
   function projectCard(p) {
     return `
-      <article class="card">
+      <article class="card${p.status ? " card--paused" : ""}">
         <div class="card-type">${esc(p.type)}</div>
-        <h4>${esc(p.name)}</h4>
+        <h4><span class="card-name">${esc(p.name)}</span>${p.status ? ` <span class="card-status">${esc(p.status)}</span>` : ""}</h4>
         ${p.role ? `<div class="card-role">${esc(p.role)}</div>` : ""}
+        ${p.subtitle ? `<div class="card-sub">${esc(p.subtitle).replace(/\{([^}]+)\}/g, (_, w) =>
+          p.subtitleLink ? `<a href="${esc(p.subtitleLink)}" target="_blank" rel="noopener">${w}</a>` : w)}</div>` : ""}
         ${gallery(p.photos)}
         <p class="card-sum">${esc(p.summary)}</p>
+        ${p.highlights && p.highlights.length ? `<ul class="card-points">${p.highlights.map(h => `<li>${esc(h)}</li>`).join("")}</ul>` : ""}
         <div class="tags">${(p.tech || []).map(t => `<span>${esc(t)}</span>`).join("")}</div>
       </article>`;
   }
@@ -133,7 +136,7 @@
       <div class="group-head">
         <h3>${esc(g.title)}</h3>
       </div>
-      <p class="group-blurb">${esc(g.blurb)}</p>
+      ${g.blurb ? `<p class="group-blurb">${esc(g.blurb)}</p>` : ""}
       <div class="cards${g.projects.length === 1 ? " single" : ""}">${g.projects.map(projectCard).join("")}</div>
     </div>`).join("");
 

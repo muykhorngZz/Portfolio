@@ -49,7 +49,7 @@ const DATA = {
 
     "Today my work sits at the intersection of research and practice. I've experienced building end-to-end data pipelines and BI dashboards, worked with LLMs and RAG systems for Khmer-language education. I present that work when I can with the most recently at IEEE TIC 2026 in Malaysia and the NUS Young Fellowship Program in Singapore.",
 
-    "Outside the lab, I'm the co-founder and CFO of RielAds, where we're building marketing analytics for Cambodian SMEs who deserve better than guesswork. I also lead the Data & Business Analytics student club, and I volunteer regularly as a translator, an interpreter, an IT hand, and occasionally an MC.",
+    "Outside the lab, I'm the co-founder and CFO of RielAds (Postponed), where we set out to build marketing analytics for Cambodian SMEs who deserve better than guesswork, and I'm also AI engineer and CFO at TobSar, where I build Khmer voice AI and help win our first paying customers. I also lead the Data & Business Analytics student club, and I volunteer regularly as a translator, an interpreter, an IT hand, and occasionally an MC.",
 
     "I'm still early, and I know it. My aspiration is to become an AI researcher and technology entrepreneur who builds things that make sense for Cambodia and for people like the ones I grew up with."
   ],
@@ -82,7 +82,9 @@ const DATA = {
     { src: "assets/images/strip-12.jpg", caption: "strip-12.jpg" },
     { src: "assets/images/strip-13.jpg", caption: "strip-13.jpg" },
     { src: "assets/images/strip-14.jpg", caption: "strip-14.jpg" },
-    { src: "assets/images/strip-15.jpg", caption: "strip-15.jpg" }
+    { src: "assets/images/strip-15.jpg", caption: "strip-15.jpg" },
+    { src: "assets/images/TobSar1.png",  caption: "TobSar1.png"  },
+    { src: "assets/images/TobSar2.png",  caption: "TobSar2.png"  }
   ],
 
   /* ---------- CONTACT / SOCIAL LINKS ----------
@@ -117,7 +119,7 @@ const DATA = {
     { year: "2022", title: "Institute of Technology of Cambodia", text: "Began an engineering degree in Applied Mathematics & Statistics (Data Science) after ranking 1st at Santhormok High School." },
     { year: "2023", title: "Languages & foundations",             text: "IELTS 7.5 through GEP 12 at ACE, HSK 3 at Cambodia-China University, and my first UNESCO UNITWIN Data Science Camp." },
     { year: "2024", title: "Learning to build",                   text: "Programming coursework in C/C++/OOP at ETEC, plus web fundamentals." },
-    { year: "2025", title: "Competitions & a startup",            text: "CATALYST champion, YFS Phnom Penh winner, Honda YES top 15, CO-founding RielAds." },
+    { year: "2025", title: "Competitions & a startup",            text: "CATALYST champion, YFS Phnom Penh winner, Honda YES top 15, CO-founding RielAds (Postponed)." },
     { year: "2026", title: "Research on the international stage", text: "Champion at the NUS Young Fellowship Program in Singapore and Best Presentation at IEEE TIC 2026 in Malaysia. Ranked #1 in Year 4 with a 4.00 GPA." }
   ],
 
@@ -132,6 +134,7 @@ const DATA = {
       projects: [
         {
           name: "RielAds",
+          status: "Postponed",
           role: "Co-Founder & Chief Financial Officer",
           type: "Startup · Marketing Analytics",
           summary: "An AI-powered marketing analytics platform that helps Cambodian SMEs measure and optimise their advertising performance.",
@@ -139,6 +142,27 @@ const DATA = {
           photos: [
             // { src: "assets/images/rielads-1.jpg", caption: "Pitching RielAds at CATALYST 2025" }
           ]
+        }
+      ]
+    },
+    {
+      id: "startup-experience",
+      title: "Startup Experience",
+      projects: [
+        {
+          name: "My work at TobSar",
+          type: "Startup Experience · AI Engineer & CFO",
+          // {curly braces} mark the word that links to subtitleLink
+          subtitle: "May 2026 – Present · {TobSar}, an AI sales agent for Cambodian chat sellers",
+          subtitleLink: "https://www.tobsar.com",
+          summary: "I joined TobSar as AI engineer and grew into the CFO and business-development role. I built our Khmer voice AI prototype and turned early adopters into paying customers.",
+          highlights: [
+            "Built a Khmer voice-to-voice customer-service prototype (speech recognition + RAG + voice cloning)",
+            "Ran demos and onboarding that converted early adopters into paid subscriptions",
+            "Represented the startup at 20+ ecosystem events, investor meetings and expert mentoring sessions"
+          ],
+          tech: ["Business Development", "Market Research", "RAG", "Speech AI", "Khmer NLP"],
+          photos: []
         }
       ]
     },

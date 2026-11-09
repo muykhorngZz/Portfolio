@@ -291,6 +291,8 @@ code{ font-family:ui-monospace,Menlo,Consolas,monospace; font-size:.85em;
 .group-head h3{ font-size:1.5rem; }
 .group-icon{ font-size:1.3rem; }
 .group-blurb{ color:var(--plum-soft); font-size:.94rem; margin-bottom:28px; }
+/* a group without a blurb keeps the same gap above its cards */
+.group-head + .cards{ margin-top:28px; }
 
 .cards{
   display:grid; grid-template-columns:repeat(auto-fill,minmax(330px,1fr));
@@ -316,6 +318,24 @@ code{ font-family:ui-monospace,Menlo,Consolas,monospace; font-size:.85em;
 .card h4{ font-size:1.18rem; margin-bottom:6px; line-height:1.28; }
 .card-role{ font-size:.86rem; color:var(--berry); font-weight:600; margin-bottom:11px; }
 .card p.card-sum{ font-size:.93rem; color:var(--plum-soft); margin-bottom:18px; }
+.card-sub{ font-size:.84rem; color:var(--plum-soft); margin-bottom:13px; }
+.card-sub a{ color:var(--berry); font-weight:600; text-decoration:underline; text-underline-offset:2px; }
+.card-sub a:hover{ color:var(--rose-deep); }
+.card-points{ margin:-6px 0 18px; padding-left:1.15em; font-size:.9rem; color:var(--plum-soft); }
+.card-points li{ margin-bottom:5px; line-height:1.5; }
+.card-points li::marker{ color:var(--rose); }
+
+/* paused / postponed project: content is softly blurred, the status badge stays sharp; hover brings it back into focus */
+.card-status{
+  display:inline-block; vertical-align:middle; margin-left:8px;
+  padding:3px 10px; border-radius:999px;
+  font-family:inherit; font-size:.68rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+  color:var(--rose-deep); background:#FBE9F0; border:1px solid var(--rose);
+}
+.card--paused > *:not(h4),
+.card--paused .card-name{ filter:blur(1.5px); opacity:.7; transition:filter .3s, opacity .3s; }
+.card--paused:hover > *:not(h4),
+.card--paused:hover .card-name{ filter:none; opacity:1; }
 .tags{ display:flex; flex-wrap:wrap; gap:7px; margin-top:auto; }
 .tags span{
   font-size:.74rem; color:var(--berry); background:var(--blush);
